@@ -26,19 +26,21 @@
 
 @property(nonatomic,retain)NSURLConnection *connection;
 
-@property(nonatomic,assign)NSInteger retryTime;
-
 @end
 
 @implementation TKDownloadItem{
     
-    NSTimeInterval _startTime;
+    NSInteger _retryTime;
     
-    unsigned long _completedSizeInOneDownloadTime;
+    NSTimeInterval _startTime;                      //下载开始时间
     
-    unsigned long _completedSizeInLastDownloadTime;
+    unsigned long _completedSizeInOneDownloadTime;  //某次下载的大小
     
-    unsigned long _totalCompletedSize;
+    unsigned long _completedSizeInLastDownloadTime;  //上次下载的大小
+    
+    unsigned long _totalCompletedSize;               //下载完成总大小
+    
+    unsigned long _speed;                            //下载速度
 }
 
 -(void)dealloc{
@@ -53,21 +55,53 @@
         _localDownloadItem=item;
         _tmpSaveHandle=nil;
         _status=MDownloadItemStatusWaiting;
+        
+        NSString *downloadFileName=[_localDownloadItem getItemFileSavaPath];
         NSString *cacheCategory=[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-        NSString *documentCategory=[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
         NSString *tempDataCategory=[cacheCategory stringByAppendingPathComponent:@"tempData"];
         NSString *statusCacheCategory=[cacheCategory stringByAppendingPathComponent:@"statusCache"];
+        self.tmpSavePath=[tempDataCategory stringByAppendingPathExtension:downloadFileName];
+        self.statusSavePath=[statusCacheCategory stringByAppendingPathExtension:downloadFileName];
         
+        NSString *documentCategory=[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+        self.savepath=[documentCategory stringByAppendingPathExtension:downloadFileName];
         
+        if ([self isContinueTransferFromBreakpoint]) {
+            
+            
+        }
+   
     }
     return self;
 }
 
+//是否有缓存，判断断点续传
+-(BOOL)isContinueTransferFromBreakpoint{
+    BOOL isTmpSavePathExist=[[NSFileManager defaultManager]fileExistsAtPath:self.tmpSavePath];
+    BOOL isStatusSavePath=[[NSFileManager defaultManager]fileExistsAtPath:self.statusSavePath];
+    if (isTmpSavePathExist && isStatusSavePath) {
+        return YES;
+    }
+    return NO;
+}
+
 -(void)startDownload{
-    
+    if ([self isDownloading]) {
+        return;
+    }
+    _retryTime=0;
+    [self downLoading];
 }
 
 -(void)retryDownload{
+    _retryTime++;
+    [self downLoading];
+    
+}
+
+-(void)downLoading{
+    _startTime=[[NSDate date]timeIntervalSince1970];
+    [_localDownloadItem setItemDownloadStatus:MDownloadItemStatusDownloading];
     
 }
 
@@ -75,13 +109,19 @@
     
 }
 
-
--(BOOL)isDownloading{
+-(void)saveCurrentDownloadStatus{
     
 }
 
+-(BOOL)isDownloading{
+    if (_status==MDownloadItemStatusDownloading || _status==MDownloadItemStatusRequestingURL) {
+        return YES;
+    }
+    return NO;
+}
+
 -(NSInteger)downloadingSpeed{
-    
+    return _speed;
 }
 
 -(float)downloadedPercent{

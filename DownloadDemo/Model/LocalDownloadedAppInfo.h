@@ -39,5 +39,8 @@
 @property(nonatomic, retain) UIImage  *icon;
 
 
+-(NSString *)getItemFileSavaPath;
+
+-(void)setItemDownloadStatus:(DownloadStatusType)status;
 
 @end

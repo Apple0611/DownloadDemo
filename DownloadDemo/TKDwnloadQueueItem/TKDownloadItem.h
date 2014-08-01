@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "LocalDownloadedAppInfo.h"
 #import "DYMicro.h"
+#import "AFHTTPRequestOperation.h"
 
 @class AppInfo;
 
@@ -22,9 +23,11 @@
 
 -(void)retryDownload;
 
+-(void)downLoading;
+
 -(void)pauseDownload;
 
-
+-(void)saveCurrentDownloadStatus;
 
 -(BOOL)isDownloading;
 
