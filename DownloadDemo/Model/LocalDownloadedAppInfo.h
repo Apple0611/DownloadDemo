@@ -43,4 +43,6 @@
 
 -(void)setItemDownloadStatus:(DownloadStatusType)status;
 
+-(NSURL *)getDownLoadItemIpaURL;
+
 @end

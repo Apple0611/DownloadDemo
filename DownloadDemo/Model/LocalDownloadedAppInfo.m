@@ -58,4 +58,8 @@
     }
 }
 
+-(NSURL *)getDownLoadItemIpaURL{
+    return [NSURL URLWithString:self.ipaUrl];
+}
+
 @end

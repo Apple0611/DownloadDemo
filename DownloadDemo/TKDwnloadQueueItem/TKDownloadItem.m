@@ -102,6 +102,18 @@
 -(void)downLoading{
     _startTime=[[NSDate date]timeIntervalSince1970];
     [_localDownloadItem setItemDownloadStatus:MDownloadItemStatusDownloading];
+    NSMutableURLRequest *request=[[NSMutableURLRequest alloc]init];
+    [request setURL:[_localDownloadItem getDownLoadItemIpaURL]];
+    
+    if (![self isContinueTransferFromBreakpoint]) {
+        self.statusDic=[[[NSMutableDictionary alloc]init]autorelease];
+        
+    }
+    if (![[NSFileManager defaultManager]fileExistsAtPath:_tmpSavePath]) {
+        [[NSFileManager defaultManager]createFileAtPath:_tmpSavePath contents:nil attributes:nil];
+    }
+   
+    
     
 }
 
