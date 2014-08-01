@@ -21,6 +21,9 @@
 		B62848291988FD2A0030B89B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B628480B1988FD2A0030B89B /* UIKit.framework */; };
 		B62848311988FD2A0030B89B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B628482F1988FD2A0030B89B /* InfoPlist.strings */; };
 		B62848331988FD2A0030B89B /* DownloadDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B62848321988FD2A0030B89B /* DownloadDemoTests.m */; };
+		B62848411988FF740030B89B /* TKDownloadItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B62848401988FF740030B89B /* TKDownloadItem.m */; };
+		B62848451988FFC60030B89B /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B62848441988FFC60030B89B /* AppInfo.m */; };
+		B6284852198906720030B89B /* LocalDownloadedAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B6284851198906720030B89B /* LocalDownloadedAppInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,13 @@
 		B628482E1988FD2A0030B89B /* DownloadDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DownloadDemoTests-Info.plist"; sourceTree = "<group>"; };
 		B62848301988FD2A0030B89B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B62848321988FD2A0030B89B /* DownloadDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadDemoTests.m; sourceTree = "<group>"; };
+		B628483F1988FF740030B89B /* TKDownloadItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKDownloadItem.h; sourceTree = "<group>"; };
+		B62848401988FF740030B89B /* TKDownloadItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKDownloadItem.m; sourceTree = "<group>"; };
+		B62848431988FFC60030B89B /* AppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInfo.h; sourceTree = "<group>"; };
+		B62848441988FFC60030B89B /* AppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInfo.m; sourceTree = "<group>"; };
+		B628484F198902ED0030B89B /* DYMicro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYMicro.h; sourceTree = "<group>"; };
+		B6284850198906720030B89B /* LocalDownloadedAppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalDownloadedAppInfo.h; sourceTree = "<group>"; };
+		B6284851198906720030B89B /* LocalDownloadedAppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalDownloadedAppInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +122,9 @@
 		B628480D1988FD2A0030B89B /* DownloadDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B628484B198902350030B89B /* Unility */,
+				B62848421988FF9C0030B89B /* Model */,
+				B628483E1988FF050030B89B /* TKDwnloadQueueItem */,
 				B62848161988FD2A0030B89B /* AppDelegate.h */,
 				B62848171988FD2A0030B89B /* AppDelegate.m */,
 				B62848191988FD2A0030B89B /* Main.storyboard */,
@@ -150,6 +163,34 @@
 				B628482F1988FD2A0030B89B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B628483E1988FF050030B89B /* TKDwnloadQueueItem */ = {
+			isa = PBXGroup;
+			children = (
+				B628483F1988FF740030B89B /* TKDownloadItem.h */,
+				B62848401988FF740030B89B /* TKDownloadItem.m */,
+			);
+			path = TKDwnloadQueueItem;
+			sourceTree = "<group>";
+		};
+		B62848421988FF9C0030B89B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B62848431988FFC60030B89B /* AppInfo.h */,
+				B62848441988FFC60030B89B /* AppInfo.m */,
+				B6284850198906720030B89B /* LocalDownloadedAppInfo.h */,
+				B6284851198906720030B89B /* LocalDownloadedAppInfo.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B628484B198902350030B89B /* Unility */ = {
+			isa = PBXGroup;
+			children = (
+				B628484F198902ED0030B89B /* DYMicro.h */,
+			);
+			path = Unility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,7 +290,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6284852198906720030B89B /* LocalDownloadedAppInfo.m in Sources */,
+				B62848451988FFC60030B89B /* AppInfo.m in Sources */,
 				B628481E1988FD2A0030B89B /* ViewController.m in Sources */,
+				B62848411988FF740030B89B /* TKDownloadItem.m in Sources */,
 				B62848181988FD2A0030B89B /* AppDelegate.m in Sources */,
 				B62848141988FD2A0030B89B /* main.m in Sources */,
 			);
@@ -376,6 +420,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DownloadDemo/DownloadDemo-Prefix.pch";
 				INFOPLIST_FILE = "DownloadDemo/DownloadDemo-Info.plist";
@@ -389,6 +434,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DownloadDemo/DownloadDemo-Prefix.pch";
 				INFOPLIST_FILE = "DownloadDemo/DownloadDemo-Info.plist";
