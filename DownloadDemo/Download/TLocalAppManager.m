@@ -7,13 +7,14 @@
 
 
 #import "TLocalAppManager.h"
-#import "AppInfoLite.h"
+#import "TKMicro.h"
+//#import "AppInfoLite.h"
 #import "LocalAppInfo.h"
-#import "FMDB/FMDatabase.h"
+#import "FMDatabase.h"
 #import "InstallOperation.h"
 #import "UninstallOperation.h"
 #import "TKCodeHelper.h"
-#import "CodeHelper/AppStrings.h"
+#import "AppStrings.h"
 #import <dlfcn.h>
 
 #define PROXY_TYPE_INSTALL 1u
