@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A8C3EA6A19B5506800B90F05 /* VPVideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C3EA6919B5506800B90F05 /* VPVideoPlayerView.m */; };
+		A8C3EA6C19B560C500B90F05 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8C3EA6B19B560C500B90F05 /* CoreMedia.framework */; };
+		A8C3EA6F19B59E1800B90F05 /* VPAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C3EA6E19B59E1800B90F05 /* VPAdView.m */; };
+		A8C3EA7519B5A5AF00B90F05 /* CCGetP2PUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C3EA7219B5A5AF00B90F05 /* CCGetP2PUrl.m */; };
+		A8C3EA7619B5A5AF00B90F05 /* CCGetP2PData.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C3EA7419B5A5AF00B90F05 /* CCGetP2PData.m */; };
+		A8D1D90919B48B990036C3C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D1D90819B48B990036C3C2 /* Foundation.framework */; };
+		A8D1D90B19B48B990036C3C2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D1D90A19B48B990036C3C2 /* CoreGraphics.framework */; };
+		A8D1D90D19B48B990036C3C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D1D90C19B48B990036C3C2 /* UIKit.framework */; };
+		A8D1D91319B48B990036C3C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8D1D91119B48B990036C3C2 /* InfoPlist.strings */; };
+		A8D1D91519B48B990036C3C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D1D91419B48B990036C3C2 /* main.m */; };
+		A8D1D91919B48B990036C3C2 /* VPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D1D91819B48B990036C3C2 /* VPAppDelegate.m */; };
+		A8D1D91C19B48B990036C3C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8D1D91A19B48B990036C3C2 /* Main.storyboard */; };
+		A8D1D91F19B48B990036C3C2 /* VPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D1D91E19B48B990036C3C2 /* VPViewController.m */; };
+		A8D1D92119B48B990036C3C2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8D1D92019B48B990036C3C2 /* Images.xcassets */; };
+		A8D1D92819B48B990036C3C2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D1D92719B48B990036C3C2 /* XCTest.framework */; };
+		A8D1D92919B48B990036C3C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D1D90819B48B990036C3C2 /* Foundation.framework */; };
+		A8D1D92A19B48B990036C3C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D1D90C19B48B990036C3C2 /* UIKit.framework */; };
+		A8D1D93219B48B990036C3C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8D1D93019B48B990036C3C2 /* InfoPlist.strings */; };
+		A8D1D93419B48B990036C3C2 /* VidoPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D1D93319B48B990036C3C2 /* VidoPlayerTests.m */; };
+		A8D1D95E19B48C1F0036C3C2 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D1D94C19B48C1F0036C3C2 /* pause.png */; };
+		A8D1D95F19B48C1F0036C3C2 /* pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D1D94D19B48C1F0036C3C2 /* pause@2x.png */; };
+		A8D1D96019B48C1F0036C3C2 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D1D94E19B48C1F0036C3C2 /* play.png */; };
+		A8D1D96119B48C1F0036C3C2 /* play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D1D94F19B48C1F0036C3C2 /* play@2x.png */; };
+		A8D1D96619B48C1F0036C3C2 /* zoomin.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D1D95419B48C1F0036C3C2 /* zoomin.png */; };
+		A8D1D96719B48C1F0036C3C2 /* zoomin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D1D95519B48C1F0036C3C2 /* zoomin@2x.png */; };
+		A8D1D96819B48C1F0036C3C2 /* zoomout.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D1D95619B48C1F0036C3C2 /* zoomout.png */; };
+		A8D1D96919B48C1F0036C3C2 /* zoomout@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D1D95719B48C1F0036C3C2 /* zoomout@2x.png */; };
+		A8D1D97319B48C910036C3C2 /* CustomSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D1D96C19B48C910036C3C2 /* CustomSliderView.m */; };
+		A8D1D97419B48C910036C3C2 /* higlightedBarBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D1D96E19B48C910036C3C2 /* higlightedBarBackground@2x.png */; };
+		A8D1D97519B48C910036C3C2 /* point.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D1D96F19B48C910036C3C2 /* point.png */; };
+		A8D1D97619B48C910036C3C2 /* point1*1.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D1D97019B48C910036C3C2 /* point1*1.png */; };
+		A8D1D97719B48C910036C3C2 /* point@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D1D97119B48C910036C3C2 /* point@2x.png */; };
+		A8D1D97819B48C910036C3C2 /* trackBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A8D1D97219B48C910036C3C2 /* trackBackground@2x.png */; };
+		A8D1D97A19B491E70036C3C2 /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A8D1D97919B491E70036C3C2 /* test.mp4 */; };
+		A8D1D97D19B495D90036C3C2 /* VPVideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D1D97C19B495D90036C3C2 /* VPVideoPlayerViewController.m */; };
+		A8D1D98019B498430036C3C2 /* VideoPlayerObj.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D1D97F19B498430036C3C2 /* VideoPlayerObj.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A8D1D92B19B48B990036C3C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8D1D8FD19B48B990036C3C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8D1D90419B48B990036C3C2;
+			remoteInfo = VidoPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A8C3EA6819B5506800B90F05 /* VPVideoPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPVideoPlayerView.h; sourceTree = "<group>"; };
+		A8C3EA6919B5506800B90F05 /* VPVideoPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPVideoPlayerView.m; sourceTree = "<group>"; };
+		A8C3EA6B19B560C500B90F05 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		A8C3EA6D19B59E1800B90F05 /* VPAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPAdView.h; sourceTree = "<group>"; };
+		A8C3EA6E19B59E1800B90F05 /* VPAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPAdView.m; sourceTree = "<group>"; };
+		A8C3EA7119B5A5AF00B90F05 /* CCGetP2PUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCGetP2PUrl.h; sourceTree = "<group>"; };
+		A8C3EA7219B5A5AF00B90F05 /* CCGetP2PUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCGetP2PUrl.m; sourceTree = "<group>"; };
+		A8C3EA7319B5A5AF00B90F05 /* CCGetP2PData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCGetP2PData.h; sourceTree = "<group>"; };
+		A8C3EA7419B5A5AF00B90F05 /* CCGetP2PData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCGetP2PData.m; sourceTree = "<group>"; };
+		A8D1D90519B48B990036C3C2 /* VidoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VidoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8D1D90819B48B990036C3C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A8D1D90A19B48B990036C3C2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A8D1D90C19B48B990036C3C2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A8D1D91019B48B990036C3C2 /* VidoPlayer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VidoPlayer-Info.plist"; sourceTree = "<group>"; };
+		A8D1D91219B48B990036C3C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A8D1D91419B48B990036C3C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A8D1D91619B48B990036C3C2 /* VidoPlayer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VidoPlayer-Prefix.pch"; sourceTree = "<group>"; };
+		A8D1D91719B48B990036C3C2 /* VPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VPAppDelegate.h; sourceTree = "<group>"; };
+		A8D1D91819B48B990036C3C2 /* VPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VPAppDelegate.m; sourceTree = "<group>"; };
+		A8D1D91B19B48B990036C3C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A8D1D91D19B48B990036C3C2 /* VPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VPViewController.h; sourceTree = "<group>"; };
+		A8D1D91E19B48B990036C3C2 /* VPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VPViewController.m; sourceTree = "<group>"; };
+		A8D1D92019B48B990036C3C2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A8D1D92619B48B990036C3C2 /* VidoPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VidoPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8D1D92719B48B990036C3C2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A8D1D92F19B48B990036C3C2 /* VidoPlayerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VidoPlayerTests-Info.plist"; sourceTree = "<group>"; };
+		A8D1D93119B48B990036C3C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A8D1D93319B48B990036C3C2 /* VidoPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VidoPlayerTests.m; sourceTree = "<group>"; };
+		A8D1D94C19B48C1F0036C3C2 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		A8D1D94D19B48C1F0036C3C2 /* pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause@2x.png"; sourceTree = "<group>"; };
+		A8D1D94E19B48C1F0036C3C2 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		A8D1D94F19B48C1F0036C3C2 /* play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play@2x.png"; sourceTree = "<group>"; };
+		A8D1D95419B48C1F0036C3C2 /* zoomin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zoomin.png; sourceTree = "<group>"; };
+		A8D1D95519B48C1F0036C3C2 /* zoomin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zoomin@2x.png"; sourceTree = "<group>"; };
+		A8D1D95619B48C1F0036C3C2 /* zoomout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zoomout.png; sourceTree = "<group>"; };
+		A8D1D95719B48C1F0036C3C2 /* zoomout@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zoomout@2x.png"; sourceTree = "<group>"; };
+		A8D1D96B19B48C910036C3C2 /* CustomSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSliderView.h; sourceTree = "<group>"; };
+		A8D1D96C19B48C910036C3C2 /* CustomSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSliderView.m; sourceTree = "<group>"; };
+		A8D1D96E19B48C910036C3C2 /* higlightedBarBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "higlightedBarBackground@2x.png"; sourceTree = "<group>"; };
+		A8D1D96F19B48C910036C3C2 /* point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = point.png; sourceTree = "<group>"; };
+		A8D1D97019B48C910036C3C2 /* point1*1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "point1*1.png"; sourceTree = "<group>"; };
+		A8D1D97119B48C910036C3C2 /* point@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "point@2x.png"; sourceTree = "<group>"; };
+		A8D1D97219B48C910036C3C2 /* trackBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trackBackground@2x.png"; sourceTree = "<group>"; };
+		A8D1D97919B491E70036C3C2 /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.mp4; sourceTree = "<group>"; };
+		A8D1D97B19B495D90036C3C2 /* VPVideoPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPVideoPlayerViewController.h; sourceTree = "<group>"; };
+		A8D1D97C19B495D90036C3C2 /* VPVideoPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPVideoPlayerViewController.m; sourceTree = "<group>"; };
+		A8D1D97E19B498430036C3C2 /* VideoPlayerObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayerObj.h; sourceTree = "<group>"; };
+		A8D1D97F19B498430036C3C2 /* VideoPlayerObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayerObj.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8D1D90219B48B990036C3C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8C3EA6C19B560C500B90F05 /* CoreMedia.framework in Frameworks */,
+				A8D1D90B19B48B990036C3C2 /* CoreGraphics.framework in Frameworks */,
+				A8D1D90D19B48B990036C3C2 /* UIKit.framework in Frameworks */,
+				A8D1D90919B48B990036C3C2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8D1D92319B48B990036C3C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D1D92819B48B990036C3C2 /* XCTest.framework in Frameworks */,
+				A8D1D92A19B48B990036C3C2 /* UIKit.framework in Frameworks */,
+				A8D1D92919B48B990036C3C2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A8C3EA7019B5A5A200B90F05 /* TestLineData */ = {
+			isa = PBXGroup;
+			children = (
+				A8C3EA7119B5A5AF00B90F05 /* CCGetP2PUrl.h */,
+				A8C3EA7219B5A5AF00B90F05 /* CCGetP2PUrl.m */,
+				A8C3EA7319B5A5AF00B90F05 /* CCGetP2PData.h */,
+				A8C3EA7419B5A5AF00B90F05 /* CCGetP2PData.m */,
+			);
+			path = TestLineData;
+			sourceTree = "<group>";
+		};
+		A8D1D8FC19B48B990036C3C2 = {
+			isa = PBXGroup;
+			children = (
+				A8D1D90E19B48B990036C3C2 /* VidoPlayer */,
+				A8D1D92D19B48B990036C3C2 /* VidoPlayerTests */,
+				A8D1D90719B48B990036C3C2 /* Frameworks */,
+				A8D1D90619B48B990036C3C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A8D1D90619B48B990036C3C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8D1D90519B48B990036C3C2 /* VidoPlayer.app */,
+				A8D1D92619B48B990036C3C2 /* VidoPlayerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8D1D90719B48B990036C3C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A8C3EA6B19B560C500B90F05 /* CoreMedia.framework */,
+				A8D1D90819B48B990036C3C2 /* Foundation.framework */,
+				A8D1D90A19B48B990036C3C2 /* CoreGraphics.framework */,
+				A8D1D90C19B48B990036C3C2 /* UIKit.framework */,
+				A8D1D92719B48B990036C3C2 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A8D1D90E19B48B990036C3C2 /* VidoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				A8C3EA7019B5A5A200B90F05 /* TestLineData */,
+				A8D1D96A19B48C910036C3C2 /* Slider */,
+				A8D1D93D19B48BB50036C3C2 /* PlayerCode */,
+				A8D1D91719B48B990036C3C2 /* VPAppDelegate.h */,
+				A8D1D91819B48B990036C3C2 /* VPAppDelegate.m */,
+				A8D1D91A19B48B990036C3C2 /* Main.storyboard */,
+				A8D1D91D19B48B990036C3C2 /* VPViewController.h */,
+				A8D1D91E19B48B990036C3C2 /* VPViewController.m */,
+				A8D1D97B19B495D90036C3C2 /* VPVideoPlayerViewController.h */,
+				A8D1D97C19B495D90036C3C2 /* VPVideoPlayerViewController.m */,
+				A8D1D92019B48B990036C3C2 /* Images.xcassets */,
+				A8D1D90F19B48B990036C3C2 /* Supporting Files */,
+				A8C3EA6D19B59E1800B90F05 /* VPAdView.h */,
+				A8C3EA6E19B59E1800B90F05 /* VPAdView.m */,
+			);
+			path = VidoPlayer;
+			sourceTree = "<group>";
+		};
+		A8D1D90F19B48B990036C3C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8D1D91019B48B990036C3C2 /* VidoPlayer-Info.plist */,
+				A8D1D91119B48B990036C3C2 /* InfoPlist.strings */,
+				A8D1D91419B48B990036C3C2 /* main.m */,
+				A8D1D91619B48B990036C3C2 /* VidoPlayer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A8D1D92D19B48B990036C3C2 /* VidoPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A8D1D93319B48B990036C3C2 /* VidoPlayerTests.m */,
+				A8D1D92E19B48B990036C3C2 /* Supporting Files */,
+			);
+			path = VidoPlayerTests;
+			sourceTree = "<group>";
+		};
+		A8D1D92E19B48B990036C3C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8D1D92F19B48B990036C3C2 /* VidoPlayerTests-Info.plist */,
+				A8D1D93019B48B990036C3C2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A8D1D93D19B48BB50036C3C2 /* PlayerCode */ = {
+			isa = PBXGroup;
+			children = (
+				A8D1D94519B48C1F0036C3C2 /* plsyerRes */,
+				A8D1D97E19B498430036C3C2 /* VideoPlayerObj.h */,
+				A8D1D97F19B498430036C3C2 /* VideoPlayerObj.m */,
+				A8C3EA6819B5506800B90F05 /* VPVideoPlayerView.h */,
+				A8C3EA6919B5506800B90F05 /* VPVideoPlayerView.m */,
+			);
+			path = PlayerCode;
+			sourceTree = "<group>";
+		};
+		A8D1D94519B48C1F0036C3C2 /* plsyerRes */ = {
+			isa = PBXGroup;
+			children = (
+				A8D1D94C19B48C1F0036C3C2 /* pause.png */,
+				A8D1D94D19B48C1F0036C3C2 /* pause@2x.png */,
+				A8D1D94E19B48C1F0036C3C2 /* play.png */,
+				A8D1D94F19B48C1F0036C3C2 /* play@2x.png */,
+				A8D1D95419B48C1F0036C3C2 /* zoomin.png */,
+				A8D1D95519B48C1F0036C3C2 /* zoomin@2x.png */,
+				A8D1D95619B48C1F0036C3C2 /* zoomout.png */,
+				A8D1D95719B48C1F0036C3C2 /* zoomout@2x.png */,
+			);
+			path = plsyerRes;
+			sourceTree = "<group>";
+		};
+		A8D1D96A19B48C910036C3C2 /* Slider */ = {
+			isa = PBXGroup;
+			children = (
+				A8D1D96B19B48C910036C3C2 /* CustomSliderView.h */,
+				A8D1D96C19B48C910036C3C2 /* CustomSliderView.m */,
+				A8D1D96D19B48C910036C3C2 /* Resources */,
+			);
+			path = Slider;
+			sourceTree = "<group>";
+		};
+		A8D1D96D19B48C910036C3C2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A8D1D97919B491E70036C3C2 /* test.mp4 */,
+				A8D1D96E19B48C910036C3C2 /* higlightedBarBackground@2x.png */,
+				A8D1D96F19B48C910036C3C2 /* point.png */,
+				A8D1D97019B48C910036C3C2 /* point1*1.png */,
+				A8D1D97119B48C910036C3C2 /* point@2x.png */,
+				A8D1D97219B48C910036C3C2 /* trackBackground@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8D1D90419B48B990036C3C2 /* VidoPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8D1D93719B48B990036C3C2 /* Build configuration list for PBXNativeTarget "VidoPlayer" */;
+			buildPhases = (
+				A8D1D90119B48B990036C3C2 /* Sources */,
+				A8D1D90219B48B990036C3C2 /* Frameworks */,
+				A8D1D90319B48B990036C3C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VidoPlayer;
+			productName = VidoPlayer;
+			productReference = A8D1D90519B48B990036C3C2 /* VidoPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A8D1D92519B48B990036C3C2 /* VidoPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8D1D93A19B48B990036C3C2 /* Build configuration list for PBXNativeTarget "VidoPlayerTests" */;
+			buildPhases = (
+				A8D1D92219B48B990036C3C2 /* Sources */,
+				A8D1D92319B48B990036C3C2 /* Frameworks */,
+				A8D1D92419B48B990036C3C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8D1D92C19B48B990036C3C2 /* PBXTargetDependency */,
+			);
+			name = VidoPlayerTests;
+			productName = VidoPlayerTests;
+			productReference = A8D1D92619B48B990036C3C2 /* VidoPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8D1D8FD19B48B990036C3C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VP;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "helfy ";
+				TargetAttributes = {
+					A8D1D92519B48B990036C3C2 = {
+						TestTargetID = A8D1D90419B48B990036C3C2;
+					};
+				};
+			};
+			buildConfigurationList = A8D1D90019B48B990036C3C2 /* Build configuration list for PBXProject "VidoPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A8D1D8FC19B48B990036C3C2;
+			productRefGroup = A8D1D90619B48B990036C3C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8D1D90419B48B990036C3C2 /* VidoPlayer */,
+				A8D1D92519B48B990036C3C2 /* VidoPlayerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8D1D90319B48B990036C3C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D1D96119B48C1F0036C3C2 /* play@2x.png in Resources */,
+				A8D1D96619B48C1F0036C3C2 /* zoomin.png in Resources */,
+				A8D1D97519B48C910036C3C2 /* point.png in Resources */,
+				A8D1D97719B48C910036C3C2 /* point@2x.png in Resources */,
+				A8D1D95E19B48C1F0036C3C2 /* pause.png in Resources */,
+				A8D1D96719B48C1F0036C3C2 /* zoomin@2x.png in Resources */,
+				A8D1D96919B48C1F0036C3C2 /* zoomout@2x.png in Resources */,
+				A8D1D92119B48B990036C3C2 /* Images.xcassets in Resources */,
+				A8D1D97A19B491E70036C3C2 /* test.mp4 in Resources */,
+				A8D1D97819B48C910036C3C2 /* trackBackground@2x.png in Resources */,
+				A8D1D96019B48C1F0036C3C2 /* play.png in Resources */,
+				A8D1D91319B48B990036C3C2 /* InfoPlist.strings in Resources */,
+				A8D1D97619B48C910036C3C2 /* point1*1.png in Resources */,
+				A8D1D91C19B48B990036C3C2 /* Main.storyboard in Resources */,
+				A8D1D97419B48C910036C3C2 /* higlightedBarBackground@2x.png in Resources */,
+				A8D1D95F19B48C1F0036C3C2 /* pause@2x.png in Resources */,
+				A8D1D96819B48C1F0036C3C2 /* zoomout.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8D1D92419B48B990036C3C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D1D93219B48B990036C3C2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8D1D90119B48B990036C3C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D1D91F19B48B990036C3C2 /* VPViewController.m in Sources */,
+				A8C3EA7519B5A5AF00B90F05 /* CCGetP2PUrl.m in Sources */,
+				A8D1D98019B498430036C3C2 /* VideoPlayerObj.m in Sources */,
+				A8C3EA7619B5A5AF00B90F05 /* CCGetP2PData.m in Sources */,
+				A8D1D97D19B495D90036C3C2 /* VPVideoPlayerViewController.m in Sources */,
+				A8C3EA6F19B59E1800B90F05 /* VPAdView.m in Sources */,
+				A8D1D97319B48C910036C3C2 /* CustomSliderView.m in Sources */,
+				A8D1D91919B48B990036C3C2 /* VPAppDelegate.m in Sources */,
+				A8D1D91519B48B990036C3C2 /* main.m in Sources */,
+				A8C3EA6A19B5506800B90F05 /* VPVideoPlayerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8D1D92219B48B990036C3C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D1D93419B48B990036C3C2 /* VidoPlayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A8D1D92C19B48B990036C3C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8D1D90419B48B990036C3C2 /* VidoPlayer */;
+			targetProxy = A8D1D92B19B48B990036C3C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A8D1D91119B48B990036C3C2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8D1D91219B48B990036C3C2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A8D1D91A19B48B990036C3C2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8D1D91B19B48B990036C3C2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A8D1D93019B48B990036C3C2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8D1D93119B48B990036C3C2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A8D1D93519B48B990036C3C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		A8D1D93619B48B990036C3C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+		A8D1D93819B48B990036C3C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VidoPlayer/VidoPlayer-Prefix.pch";
+				INFOPLIST_FILE = "VidoPlayer/VidoPlayer-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A8D1D93919B48B990036C3C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VidoPlayer/VidoPlayer-Prefix.pch";
+				INFOPLIST_FILE = "VidoPlayer/VidoPlayer-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A8D1D93B19B48B990036C3C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VidoPlayer.app/VidoPlayer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VidoPlayer/VidoPlayer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VidoPlayerTests/VidoPlayerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A8D1D93C19B48B990036C3C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VidoPlayer.app/VidoPlayer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VidoPlayer/VidoPlayer-Prefix.pch";
+				INFOPLIST_FILE = "VidoPlayerTests/VidoPlayerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8D1D90019B48B990036C3C2 /* Build configuration list for PBXProject "VidoPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8D1D93519B48B990036C3C2 /* Debug */,
+				A8D1D93619B48B990036C3C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8D1D93719B48B990036C3C2 /* Build configuration list for PBXNativeTarget "VidoPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8D1D93819B48B990036C3C2 /* Debug */,
+				A8D1D93919B48B990036C3C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8D1D93A19B48B990036C3C2 /* Build configuration list for PBXNativeTarget "VidoPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8D1D93B19B48B990036C3C2 /* Debug */,
+				A8D1D93C19B48B990036C3C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A8D1D8FD19B48B990036C3C2 /* Project object */;
+}
