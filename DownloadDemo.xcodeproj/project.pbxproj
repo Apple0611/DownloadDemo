@@ -21,9 +21,15 @@
 		B62848291988FD2A0030B89B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B628480B1988FD2A0030B89B /* UIKit.framework */; };
 		B62848311988FD2A0030B89B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B628482F1988FD2A0030B89B /* InfoPlist.strings */; };
 		B62848331988FD2A0030B89B /* DownloadDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B62848321988FD2A0030B89B /* DownloadDemoTests.m */; };
-		B62848411988FF740030B89B /* TKDownloadItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B62848401988FF740030B89B /* TKDownloadItem.m */; };
 		B62848451988FFC60030B89B /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B62848441988FFC60030B89B /* AppInfo.m */; };
 		B6284852198906720030B89B /* LocalDownloadedAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B6284851198906720030B89B /* LocalDownloadedAppInfo.m */; };
+		B654A5A919EE0B04001AEE8F /* TDownloadItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B654A59919EE0B04001AEE8F /* TDownloadItem.m */; };
+		B654A5AA19EE0B04001AEE8F /* TDownloadQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = B654A59B19EE0B04001AEE8F /* TDownloadQueue.m */; };
+		B654A5AB19EE0B04001AEE8F /* TDownloadQueueItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B654A59E19EE0B04001AEE8F /* TDownloadQueueItem.m */; };
+		B654A5AC19EE0B04001AEE8F /* TLocalAppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B654A5A119EE0B04001AEE8F /* TLocalAppManager.m */; };
+		B654A5AD19EE0B04001AEE8F /* InstallOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B654A5A419EE0B04001AEE8F /* InstallOperation.m */; };
+		B654A5AE19EE0B04001AEE8F /* TApplicationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B654A5A619EE0B04001AEE8F /* TApplicationManager.m */; };
+		B654A5AF19EE0B04001AEE8F /* UninstallOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B654A5A819EE0B04001AEE8F /* UninstallOperation.m */; };
 		B6F4599B198B9CDF00F1331A /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F45989198B9CDF00F1331A /* AFHTTPClient.m */; };
 		B6F4599C198B9CDF00F1331A /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F4598B198B9CDF00F1331A /* AFHTTPRequestOperation.m */; };
 		B6F4599D198B9CDF00F1331A /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F4598D198B9CDF00F1331A /* AFImageRequestOperation.m */; };
@@ -65,13 +71,27 @@
 		B628482E1988FD2A0030B89B /* DownloadDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DownloadDemoTests-Info.plist"; sourceTree = "<group>"; };
 		B62848301988FD2A0030B89B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B62848321988FD2A0030B89B /* DownloadDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadDemoTests.m; sourceTree = "<group>"; };
-		B628483F1988FF740030B89B /* TKDownloadItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKDownloadItem.h; sourceTree = "<group>"; };
-		B62848401988FF740030B89B /* TKDownloadItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKDownloadItem.m; sourceTree = "<group>"; };
 		B62848431988FFC60030B89B /* AppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInfo.h; sourceTree = "<group>"; };
 		B62848441988FFC60030B89B /* AppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInfo.m; sourceTree = "<group>"; };
 		B628484F198902ED0030B89B /* DYMicro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYMicro.h; sourceTree = "<group>"; };
 		B6284850198906720030B89B /* LocalDownloadedAppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalDownloadedAppInfo.h; sourceTree = "<group>"; };
 		B6284851198906720030B89B /* LocalDownloadedAppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalDownloadedAppInfo.m; sourceTree = "<group>"; };
+		B654A59819EE0B04001AEE8F /* TDownloadItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDownloadItem.h; sourceTree = "<group>"; };
+		B654A59919EE0B04001AEE8F /* TDownloadItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDownloadItem.m; sourceTree = "<group>"; };
+		B654A59A19EE0B04001AEE8F /* TDownloadQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDownloadQueue.h; sourceTree = "<group>"; };
+		B654A59B19EE0B04001AEE8F /* TDownloadQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDownloadQueue.m; sourceTree = "<group>"; };
+		B654A59C19EE0B04001AEE8F /* TDownloadQueueDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDownloadQueueDelegate.h; sourceTree = "<group>"; };
+		B654A59D19EE0B04001AEE8F /* TDownloadQueueItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDownloadQueueItem.h; sourceTree = "<group>"; };
+		B654A59E19EE0B04001AEE8F /* TDownloadQueueItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDownloadQueueItem.m; sourceTree = "<group>"; };
+		B654A59F19EE0B04001AEE8F /* TDownloadQueueItemDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDownloadQueueItemDelegate.h; sourceTree = "<group>"; };
+		B654A5A019EE0B04001AEE8F /* TLocalAppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLocalAppManager.h; sourceTree = "<group>"; };
+		B654A5A119EE0B04001AEE8F /* TLocalAppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLocalAppManager.m; sourceTree = "<group>"; };
+		B654A5A319EE0B04001AEE8F /* InstallOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstallOperation.h; sourceTree = "<group>"; };
+		B654A5A419EE0B04001AEE8F /* InstallOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstallOperation.m; sourceTree = "<group>"; };
+		B654A5A519EE0B04001AEE8F /* TApplicationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TApplicationManager.h; sourceTree = "<group>"; };
+		B654A5A619EE0B04001AEE8F /* TApplicationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TApplicationManager.m; sourceTree = "<group>"; };
+		B654A5A719EE0B04001AEE8F /* UninstallOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UninstallOperation.h; sourceTree = "<group>"; };
+		B654A5A819EE0B04001AEE8F /* UninstallOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UninstallOperation.m; sourceTree = "<group>"; };
 		B6F45988198B9CDF00F1331A /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
 		B6F45989198B9CDF00F1331A /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
 		B6F4598A198B9CDF00F1331A /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -150,6 +170,8 @@
 		B628480D1988FD2A0030B89B /* DownloadDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B654A59719EE0B04001AEE8F /* Download */,
+				B654A5A219EE0B04001AEE8F /* InstallProxy */,
 				B6F45986198B9C5900F1331A /* ExternClass */,
 				B628484B198902350030B89B /* Unility */,
 				B62848421988FF9C0030B89B /* Model */,
@@ -197,8 +219,6 @@
 		B628483E1988FF050030B89B /* TKDwnloadQueueItem */ = {
 			isa = PBXGroup;
 			children = (
-				B628483F1988FF740030B89B /* TKDownloadItem.h */,
-				B62848401988FF740030B89B /* TKDownloadItem.m */,
 			);
 			path = TKDwnloadQueueItem;
 			sourceTree = "<group>";
@@ -220,6 +240,36 @@
 				B628484F198902ED0030B89B /* DYMicro.h */,
 			);
 			path = Unility;
+			sourceTree = "<group>";
+		};
+		B654A59719EE0B04001AEE8F /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				B654A59819EE0B04001AEE8F /* TDownloadItem.h */,
+				B654A59919EE0B04001AEE8F /* TDownloadItem.m */,
+				B654A59A19EE0B04001AEE8F /* TDownloadQueue.h */,
+				B654A59B19EE0B04001AEE8F /* TDownloadQueue.m */,
+				B654A59C19EE0B04001AEE8F /* TDownloadQueueDelegate.h */,
+				B654A59D19EE0B04001AEE8F /* TDownloadQueueItem.h */,
+				B654A59E19EE0B04001AEE8F /* TDownloadQueueItem.m */,
+				B654A59F19EE0B04001AEE8F /* TDownloadQueueItemDelegate.h */,
+				B654A5A019EE0B04001AEE8F /* TLocalAppManager.h */,
+				B654A5A119EE0B04001AEE8F /* TLocalAppManager.m */,
+			);
+			path = Download;
+			sourceTree = "<group>";
+		};
+		B654A5A219EE0B04001AEE8F /* InstallProxy */ = {
+			isa = PBXGroup;
+			children = (
+				B654A5A319EE0B04001AEE8F /* InstallOperation.h */,
+				B654A5A419EE0B04001AEE8F /* InstallOperation.m */,
+				B654A5A519EE0B04001AEE8F /* TApplicationManager.h */,
+				B654A5A619EE0B04001AEE8F /* TApplicationManager.m */,
+				B654A5A719EE0B04001AEE8F /* UninstallOperation.h */,
+				B654A5A819EE0B04001AEE8F /* UninstallOperation.m */,
+			);
+			path = InstallProxy;
 			sourceTree = "<group>";
 		};
 		B6F45986198B9C5900F1331A /* ExternClass */ = {
@@ -355,19 +405,25 @@
 			files = (
 				B6F459A1198B9CDF00F1331A /* AFURLConnectionOperation.m in Sources */,
 				B6F459A3198B9CDF00F1331A /* UIImageView+AFNetworking.m in Sources */,
+				B654A5AC19EE0B04001AEE8F /* TLocalAppManager.m in Sources */,
 				B6284852198906720030B89B /* LocalDownloadedAppInfo.m in Sources */,
 				B62848451988FFC60030B89B /* AppInfo.m in Sources */,
 				B6F459A0198B9CDF00F1331A /* AFPropertyListRequestOperation.m in Sources */,
+				B654A5AB19EE0B04001AEE8F /* TDownloadQueueItem.m in Sources */,
 				B628481E1988FD2A0030B89B /* ViewController.m in Sources */,
-				B62848411988FF740030B89B /* TKDownloadItem.m in Sources */,
 				B6F459A2198B9CDF00F1331A /* AFXMLRequestOperation.m in Sources */,
 				B6F4599F198B9CDF00F1331A /* AFNetworkActivityIndicatorManager.m in Sources */,
 				B6F4599C198B9CDF00F1331A /* AFHTTPRequestOperation.m in Sources */,
 				B62848181988FD2A0030B89B /* AppDelegate.m in Sources */,
+				B654A5AD19EE0B04001AEE8F /* InstallOperation.m in Sources */,
 				B6F4599D198B9CDF00F1331A /* AFImageRequestOperation.m in Sources */,
+				B654A5A919EE0B04001AEE8F /* TDownloadItem.m in Sources */,
+				B654A5AA19EE0B04001AEE8F /* TDownloadQueue.m in Sources */,
 				B6F4599B198B9CDF00F1331A /* AFHTTPClient.m in Sources */,
 				B6F4599E198B9CDF00F1331A /* AFJSONRequestOperation.m in Sources */,
 				B62848141988FD2A0030B89B /* main.m in Sources */,
+				B654A5AF19EE0B04001AEE8F /* UninstallOperation.m in Sources */,
+				B654A5AE19EE0B04001AEE8F /* TApplicationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

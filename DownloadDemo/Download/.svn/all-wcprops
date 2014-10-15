@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/Downjoy4All/!svn/ver/2069/trunk/Downjoy4All/Utility/Download
+END
+TDownloadItem.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/Downjoy4All/!svn/ver/69/trunk/Downjoy4All/Utility/Download/TDownloadItem.h
+END
+TDownloadQueueItemDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/Downjoy4All/!svn/ver/69/trunk/Downjoy4All/Utility/Download/TDownloadQueueItemDelegate.h
+END
+TLocalAppManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/Downjoy4All/!svn/ver/546/trunk/Downjoy4All/Utility/Download/TLocalAppManager.h
+END
+TDownloadQueueDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/Downjoy4All/!svn/ver/69/trunk/Downjoy4All/Utility/Download/TDownloadQueueDelegate.h
+END
+TDownloadItem.m
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/Downjoy4All/!svn/ver/147/trunk/Downjoy4All/Utility/Download/TDownloadItem.m
+END
+TDownloadQueueItem.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/Downjoy4All/!svn/ver/256/trunk/Downjoy4All/Utility/Download/TDownloadQueueItem.h
+END
+TLocalAppManager.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/Downjoy4All/!svn/ver/2069/trunk/Downjoy4All/Utility/Download/TLocalAppManager.m
+END
+TDownloadQueue.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/Downjoy4All/!svn/ver/1855/trunk/Downjoy4All/Utility/Download/TDownloadQueue.h
+END
+TDownloadQueueItem.m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/Downjoy4All/!svn/ver/1926/trunk/Downjoy4All/Utility/Download/TDownloadQueueItem.m
+END
+TDownloadQueue.m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/Downjoy4All/!svn/ver/2012/trunk/Downjoy4All/Utility/Download/TDownloadQueue.m
+END
